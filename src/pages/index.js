@@ -60,8 +60,8 @@ const confettiConfig = {
   decay: 0.9,
 }
 const imageRotation = [
-  "http://www.stickpng.com/assets/thumbs/5845e69dfb0b0755fa99d7ef.png",
-  "http://i.imgur.com/RMKNpGQ.png",
+  "https://media.giphy.com/media/2pqvP0X0EauDC/giphy.gif",
+  "https://media.giphy.com/media/2gZ6VIxkh9f6xAiEVi/giphy.gif",
   "https://78.media.tumblr.com/a0f0e55555ba27229ad97965d5a1f0ea/tumblr_o6rxakd7lg1txe8e9o1_500.gif",
   "https://78.media.tumblr.com/ae7a96c85de740f096173b88e8dcc2d1/tumblr_nz2bavVUFz1txe8e9o1_500.png",
   "https://media.giphy.com/media/b9DdiT6VI4KfC/giphy.gif",
