@@ -14,7 +14,7 @@ const Page = styled.div`
   background-color: #95d2f6;
   background-image: 
     radial-gradient( circle 500px at 50% 50%, rgba(244,255,141,.5)  0%, rgba(253,255,255,0.5) 90% ),
-    url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/B2IPYFY4ipb5vdgt/stripes-rotating-seamless-loop-animation-background_r3dxasek__F0000.png");
+    url("https://ak4.picdn.net/shutterstock/videos/11795924/thumb/1.jpg");
   background-size: cover;
   background-position: center;
 `
