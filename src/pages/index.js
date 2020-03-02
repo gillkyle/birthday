@@ -50,6 +50,8 @@ const BigText = styled.div`
   color: #fff;
   font-size: 48px;
   text-shadow: 0px 1px 3px #777;
+  line-height: 1.05;
+  text-align: center;
 `
 
 // other constatns

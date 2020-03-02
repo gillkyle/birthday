@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
-
+import Stripes from '../img/rotating-stripes.jpg'
 import Header from '../components/header'
 import './index.css'
 
@@ -12,9 +12,12 @@ const Page = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: #95d2f6;
-  background-image: 
-    radial-gradient( circle 500px at 50% 50%, rgba(244,255,141,.5)  0%, rgba(253,255,255,0.5) 90% ),
-    url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/B2IPYFY4ipb5vdgt/stripes-rotating-seamless-loop-animation-background_r3dxasek__F0000.png");
+  background-image: radial-gradient(
+      circle 500px at 50% 50%,
+      rgba(244, 255, 141, 0.5) 0%,
+      rgba(253, 255, 255, 0.5) 90%
+    ),
+    url(${Stripes});
   background-size: cover;
   background-position: center;
 `
@@ -28,7 +31,10 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     >
-      <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" /> 
+      <link
+        href="https://fonts.googleapis.com/css?family=Luckiest+Guy"
+        rel="stylesheet"
+      />
     </Helmet>
     {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
     <div
