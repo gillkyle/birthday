@@ -8,6 +8,10 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-gatsby-cloud`,
     {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/*`] },
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
