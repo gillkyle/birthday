@@ -26,10 +26,14 @@ const Layout = ({ children, title }) => (
     <Helmet
       title={title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content: 'Celebrate good times, come on, it is birthday time.',
+        },
+        { name: 'keywords', content: 'birthday, celebrate, good times' },
       ]}
     >
+      <html lang="en" />
       <link
         href="https://fonts.googleapis.com/css?family=Luckiest+Guy"
         rel="stylesheet"
