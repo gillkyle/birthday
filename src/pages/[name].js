@@ -59,7 +59,7 @@ const BigText = styled.div`
 // other constatns
 const confettiConfig = {
   spread: 200,
-  elementCount: 65,
+  elementCount: 50,
   startVelocity: 35,
   decay: 0.9,
 }
@@ -220,7 +220,7 @@ class IndexPage extends React.Component {
 
   render() {
     const { key, buttonRotation, imageRotation, fireConfetti } = this.state
-    const recipient = process.env.GATSBY_RECIPIENT
+    const { name: recipient } = this.props
 
     return (
       <Layout title={this.props.data.site.siteMetadata.title}>
@@ -244,7 +244,7 @@ class IndexPage extends React.Component {
 export default IndexPage
 
 export const query = graphql`
-  query IndexQuery {
+  query SiteTitleQuery {
     site {
       siteMetadata {
         title

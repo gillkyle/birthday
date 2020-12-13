@@ -4,17 +4,13 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-offline',
     `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        name: 'Birthday Button',
-        start_url: '/',
-        background: '#95d2f6',
-        theme_color: '#95d2f6',
-        display: 'standalone',
-        icon: 'src/img/Icon.png',
+        google: {
+          families: ['Luckiest Guy'],
+        },
       },
     },
   ],

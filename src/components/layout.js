@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Stripes from '../img/rotating-stripes.jpg'
-import Header from '../components/header'
-import './index.css'
+import '../styles/index.css'
 
 const Page = styled.div`
   min-height: 100vh;
@@ -22,10 +21,10 @@ const Page = styled.div`
   background-position: center;
 `
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, title }) => (
   <Page>
     <Helmet
-      title={data.site.siteMetadata.title}
+      title={title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
@@ -36,7 +35,6 @@ const Layout = ({ children, data }) => (
         rel="stylesheet"
       />
     </Helmet>
-    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
     <div
       style={{
         margin: '0 auto',
@@ -45,7 +43,7 @@ const Layout = ({ children, data }) => (
         paddingTop: 0,
       }}
     >
-      {children()}
+      {children}
     </div>
   </Page>
 )
@@ -55,13 +53,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
